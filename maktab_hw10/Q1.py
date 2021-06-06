@@ -31,4 +31,4 @@ def phone_validation(input_number):
 
 print(name_validation('Amir52'))
 print(phone_validation('09011111111'))
-print(email_validation('amir@gmail.com'))
+print(email_validation('amir$ch@gmail.com'))

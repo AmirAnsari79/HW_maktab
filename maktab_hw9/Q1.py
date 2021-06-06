@@ -22,16 +22,15 @@ def mydec(func):
 
 
 class Encrypt:
-    def __init__(self):
-        pass
-
     def encrypt(self, token):
         key = Fernet.generate_key()
         f = Fernet(key)
         text = f.encrypt(token)
         return text
 
-    def decrpt(self, key, text):
+
+    # completed
+    def decrypt(self, key, text):
         f = Fernet(key)
         print(f.decrypt(text))
 
@@ -41,7 +40,7 @@ class Encrypt:
 
 
 d = Encrypt()
-d.decrpt(b'60dAdxTee1NjnvH-g2-eCNffrJMay48fQKekD65cT34=',
+d.decrypt(b'gAAAAABgvORx3Xzvh0sYhB-OdByWzwMexGeDPQjY10uDhrT6Vgn5pko2phMTPN48ZkYh5_EOVkpZ04yLj1CUdkmAiYsvmK6ybA==',
          b'gAAAAABgvKlvwfQMHuIqjsXH_TGQQqXBqC0tFiPBdVQxvtqMdzrW6ji3f3YwdTVsmXCZVGaJiLS1aqABhuIW77TlxgWfgkAidAij1zcTwZLWg4bMaHhxKdE=')
 #
 print(d.encrypt(b'amir'))

@@ -1,25 +1,7 @@
-[{
-    "name":"amir",
-    "age":12,
-    "password":"asdasd",
-    "phone":"09011111111",
-    "email":null
-},{
+{
     "name":"ali",
     "age":19,
-    "password":"asdfgj",
+    "password":"ali98",
     "phone":"09011111122",
     "email":null
-},{
-    "name":"amir",
-    "age":12,
-    "password":"asdasd",
-    "phone":"09011111111",
-    "email":null
-},{
-    "name":"ali",
-    "age":19,
-    "password":"asdfgj",
-    "phone":"09011111122",
-    "email":null
-}]
+},

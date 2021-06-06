@@ -1,6 +1,4 @@
 import json
-
-
 class User(json.JSONEncoder):
     def __init__(self, name, age, pas, phone, email=None):
         self.name = name
@@ -24,7 +22,10 @@ class User(json.JSONEncoder):
             return super().default(obj)
 
     def register(self, ):
-        with open('Q2.json', 'a')as f:
+        # read and append
+        with open() as f:
+            pass
+        with open('Q2.json', 'w')as f:
             json.dump(self.default(self), f, indent=4, separators=(",", ":"))
             f.write(',')
 
